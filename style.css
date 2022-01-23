@@ -1,3 +1,5 @@
+@import url('https://fonts.googleapis.com/css?family=Lato|ZCOOL+KuaiLe&display=swap');
+
 @font-face {
     font-family: "jua";
     src: url("fonts/BMJUA.otf");
@@ -421,6 +423,7 @@
     background:ivory;
     font-size: 130%;
     text-align: center;
+
 }
 
 .a {
@@ -437,7 +440,9 @@
 .catch{
     position: relative;
     text-align: center;
-
+    opacity: 0;
+    display: none;
+    transition: opacity 1s ease-in;
 }
 
 .bounce {

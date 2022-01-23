@@ -1,21 +1,58 @@
 <!DOCTYPE html>
 <html>
-<link rel="stylesheet" media="mediatype and|not|only (expressions)" href="print.css">
+<link rel="stylesheet" media="mediatype and|not|only (expressions)">
 
 
 <head>
     <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0, user-scalable=no,
+maximum-scale=1.0, minimum-scale=1.0">
     <meta name="viewport" content="width=device-width, initial-scale=1">
     <link href="style.css" rel="stylesheet">
     <title>whoismypresident?</title>
+    <style>
+@import url('https://fonts.googleapis.com/css?family=Lato|ZCOOL+KuaiLe&display=swap');
+.loader {
+  font-family: 'ZCOOL KuaiLe', cursive;
+  font-size: 40px;
+  color: palevioletred;
+  position: relative;
+  text-align: center;
+  margin-top: 25%;
 
 
 
+
+}
+
+.loader::after {
+  content: '\2026';
+  display: inline-block;
+  overflow: hidden;
+  vertical-align: bottom;
+  animation: dots steps(4, end) 2s infinite;
+  width: 0px;
+}
+
+@keyframes dots {
+  to {
+    width: 1.25em;
+  }
+
+
+
+
+
+    </style>
 </head>
-<meta name="viewport" content="width=device-width, initial-scale=1.0, user-scalable=no,
-maximum-scale=1.0, minimum-scale=1.0">
+
+
+
 
 <body class="body">
+ <div class="loader">
+      Data analysing
+ </div>
 <div class="catch">
     <div> <!--     position: relative; text-align: center; -->
         <span class="right"></span> <!-- animation -->
@@ -45,7 +82,7 @@ maximum-scale=1.0, minimum-scale=1.0">
 
             <div class="fade-in-box">
                 <p style="text-align:center;font-size:100%;line-height: 45px;"><br></p>
-                <p style="text-align:center;font-size:150%;line-height: 0%;">당신의 대통령은 이재명 입니다!!</p>
+                <p style="text-align:center;font-size:120%;line-height: 0%;">당신의 대통령은 이재명 입니다!!</p>
             </div>
 
 
@@ -54,10 +91,14 @@ maximum-scale=1.0, minimum-scale=1.0">
 
                 <div>
                     <ul>
-                        <li> 이재명 공약이행률 '96.1%'... 349개 정상이행 중</li></br>
-                        <li> 보편 기본 소득...연 100만원</li></br>
-                        <li> 기본 주택 ..무주택자 누구나!</li></br>
-                        <li> 기본 금융</li></br>
+                        <li> 이재명 공약이행률 '96.1%'... 349개 정상이행 중</li>
+                        </br>
+                        <li> 보편 기본 소득...연 100만원</li>
+                        </br>
+                        <li> 기본 주택 ..무주택자 누구나!</li>
+                        </br>
+                        <li> 기본 금융</li>
+                        </br>
                     </ul>
                 </div>
 
@@ -75,5 +116,6 @@ maximum-scale=1.0, minimum-scale=1.0">
     </div>
 </div>
 </body>
-
+<script type="text/javascript" src="js.js"></script>
+</body>
 </html>
